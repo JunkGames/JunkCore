@@ -1,5 +1,6 @@
 package dev.merunno.junkcore;
 
+import dev.merunno.junkcore.listeners.ChangeWorldPlayer;
 import dev.merunno.junkcore.listeners.JoinPlayer;
 import dev.merunno.junkcore.listeners.QuitPlayer;
 import org.bukkit.Bukkit;
@@ -13,6 +14,7 @@ public class JunkCore extends JavaPlugin {
         PluginManager plManager = Bukkit.getPluginManager();
         plManager.registerEvents(new JoinPlayer(), this);
         plManager.registerEvents(new QuitPlayer(), this);
+        plManager.registerEvents(new ChangeWorldPlayer(), this);
 
         getLogger().info("JunkCore enabled!");
     }
