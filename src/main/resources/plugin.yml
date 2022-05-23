@@ -1,0 +1,8 @@
+name: JunkCore
+version: '${version}'
+main: dev.merunno.junkcore.JunkCore
+api-version: 1.17
+load: STARTUP
+authors: [ meru ]
+description: This is JunkCore
+website: https://github.com/JunkGames/JunkCore
